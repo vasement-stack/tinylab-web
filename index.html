@@ -6,16 +6,16 @@
 <meta name="theme-color" content="#15120e">
 <title>小事 Lab｜把日常瑣事，變成手機裡好處理的小事</title>
 <meta name="description" content="小事 Lab 是一個獨立開發者的作品集。把日常生活的瑣事，做成手機裡簡單好用的小工具——髮線追蹤、揪好算分帳、火箭倒數遊戲、個人記帳，用最簡單的方式解決，資料盡量留在你自己手上。">
-<link rel="canonical" href="https://tinylab-web.vercel.app/">
+<link rel="canonical" href="https://tinylab-web-iota.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="小事 Lab">
 <meta property="og:description" content="把日常瑣事，變成手機裡好處理的小事。一個獨立開發者的小工具作品集。">
-<meta property="og:image" content="https://tinylab-web.vercel.app/og-image.png">
-<meta property="og:url" content="https://tinylab-web.vercel.app/">
+<meta property="og:image" content="https://tinylab-web-iota.vercel.app/og-image.png">
+<meta property="og:url" content="https://tinylab-web-iota.vercel.app/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="小事 Lab">
 <meta name="twitter:description" content="把日常瑣事，變成手機裡好處理的小事。">
-<meta name="twitter:image" content="https://tinylab-web.vercel.app/og-image.png">
+<meta name="twitter:image" content="https://tinylab-web-iota.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
 <style>
@@ -75,13 +75,10 @@ a.card:hover{border-color:var(--accent);transform:translateY(-2px);background:#2
 
 /* 開發中卡片(無連結) */
 .card.wip{cursor:default}
-.shots{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
-.shots img{width:108px;height:auto;border-radius:8px;border:1px solid var(--line)}
-.shots .ph{
-  width:108px;height:200px;border-radius:8px;border:1px dashed var(--line);
-  display:flex;align-items:center;justify-content:center;text-align:center;
-  color:var(--muted);font-size:11px;padding:8px;line-height:1.5;
-}
+.shots{display:flex;gap:12px;margin-top:16px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.shots figure{flex:0 0 auto;scroll-snap-align:start;margin:0;text-align:center}
+.shots img{width:132px;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+.shots figcaption{font-size:11.5px;color:var(--muted);margin-top:7px}
 
 footer{border-top:1px solid var(--line-soft);padding:30px 0 56px;color:var(--muted);font-size:13px;text-align:center}
 footer a{color:var(--accent);text-decoration:none}
@@ -134,12 +131,14 @@ footer .who{font-family:"Fraunces",serif;font-size:15px;color:var(--text);margin
     <div class="card wip">
       <div class="card-top">
         <h2>您真有錢</h2><span class="en">記帳工具</span>
-        <span class="tag soon">Coming soon</span>
+        <span class="tag soon">開發中</span>
       </div>
       <p>個人記帳工具。未來用 Google 登入後，會一鍵在你自己的雲端建立表格、從你的 Gmail 自動整理消費紀錄——資料完全留在你自己手上，不經過開發者。</p>
       <div class="shots">
-        <div class="ph">截圖<br>待補</div>
-        <div class="ph">截圖<br>待補</div>
+        <figure><img src="shot-overview.jpg" alt="總覽：年度與每月收支一覽" loading="lazy"><figcaption>總覽</figcaption></figure>
+        <figure><img src="shot-bills.jpg" alt="帳單：信用卡待繳與結帳日提醒" loading="lazy"><figcaption>帳單提醒</figcaption></figure>
+        <figure><img src="shot-spending.jpg" alt="消費：自動分類與搜尋" loading="lazy"><figcaption>消費分類</figcaption></figure>
+        <figure><img src="shot-invoice.jpg" alt="發票：自動配對消費紀錄" loading="lazy"><figcaption>發票配對</figcaption></figure>
       </div>
     </div>
   </main>
