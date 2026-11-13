@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>髮線追蹤｜用固定基準照記錄髮線與頭頂變化（iPhone App）</title>
+<meta name="description" content="髮線追蹤是免費的 iPhone App，用同一張基準照疊圖對齊，每次拍得一致、看得出變化。照片只存在你的手機，不上傳。">
+<link rel="canonical" href="https://youown.app/hairline-tracker/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="YouOwn">
+<meta property="og:title" content="髮線追蹤｜用固定基準照記錄髮線與頭頂變化">
+<meta property="og:description" content="免費 iPhone App。疊圖對齊、連拍推薦，照片只存在你的手機。">
+<meta property="og:url" content="https://youown.app/hairline-tracker/">
+<meta name="theme-color" content="#15120e">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"MobileApplication","name":"髮線追蹤","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","inLanguage":["zh-Hant","en"],"installUrl":"https://apps.apple.com/tw/app/id6797518042","offers":{"@type":"Offer","price":"0","priceCurrency":"TWD"},"publisher":{"@type":"Organization","name":"YouOwn","url":"https://youown.app/"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"我的照片會被上傳嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。照片只存在你的手機裡，自動對齊也在手機上完成。"}},
+{"@type":"Question","name":"需要付費嗎？","acceptedAnswer":{"@type":"Answer","text":"不用。功能全部免費，沒有付費牆，想支持開發可以自願贊助。"}},
+{"@type":"Question","name":"為什麼頭頂要用固定的基準照？","acceptedAnswer":{"@type":"Answer","text":"頭頂沒有可靠的對齊參考點，如果每張都對齊上一張，誤差會一張張累積。所以每次都跟同一張基準照對照。"}},
+{"@type":"Question","name":"這是醫療工具嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。它只幫你把照片拍得一致、方便對照，不提供診斷。擔心脫髮請諮詢皮膚科醫師。"}}
+]}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+.demo{position:relative;width:170px;height:210px;justify-self:center}
+.f{position:absolute;width:150px;height:190px;border:1px solid}
+.f::before{content:"";position:absolute;left:12px;right:12px;height:1px;background:currentColor}
+.f1{color:var(--mute);border-style:dashed;top:0;left:0}
+.f1::before{top:60px}
+.f2{color:var(--accent);top:12px;left:18px}
+.f2::before{top:76px}
+.demo span{position:absolute;left:0;bottom:-6px;font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="mark" href="/">YouOwn</a>
+<span class="by">by 小事 Lab</span>
+</header>
+<main>
+<div class="hero">
+<div>
+<h1 class="serif">每次都拍得一樣，<em>變化</em>才看得出來</h1>
+<p class="lead">髮線追蹤是免費的 iPhone App。固定一張基準照，疊圖對齊再拍，把髮線和頭頂的變化記錄下來。照片只存在你的手機。</p>
+<div class="cta">
+<a class="btn" href="https://apps.apple.com/tw/app/id6797518042">在 App Store 下載</a>
+<a class="btn ghost" href="https://line.me/R/ti/p/@hairtrack">加 LINE @hairtrack</a>
+</div>
+</div>
+<div class="demo" role="img" aria-label="基準照與今天的照片疊在一起對照的示意圖"><div class="f f1"></div><div class="f f2"></div><span>虛線是基準照，實線是今天</span></div>
+</div>
+
+<section aria-labelledby="how">
+<h2 id="how" class="serif">它怎麼幫你拍得一致</h2>
+<div class="grid">
+<div class="card"><h3 class="serif">固定基準照</h3><p>頭頂每次都跟同一張基準照比，不會一張對一張累積誤差。預設是最早一張，也可以自己指定。</p></div>
+<div class="card"><h3 class="serif">疊圖對齊</h3><p>拍攝時把基準照半透明疊在畫面上，對準位置再按快門。</p></div>
+<div class="card"><h3 class="serif">連拍推薦</h3><p>連拍三張，App 幫你挑出最接近基準照的那一張。</p></div>
+<div class="card"><h3 class="serif">前額自動對齊</h3><p>前額以雙眼位置自動對齊，在手機上完成，不需要手動調整。</p></div>
+</div>
+</section>
+
+<section aria-labelledby="privacy">
+<h2 id="privacy" class="serif">照片只留在你的手機</h2>
+<p class="note" style="font-size:16px;max-width:36em">照片存在手機本機，不上傳到任何伺服器，自動對齊也在手機上運算。App Store 的隱私標示是「不蒐集任何資料」。這也是 YouOwn 所有小工具共同的原則：資料在你自己手上。</p>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq" class="serif">常見問題</h2>
+<details><summary>我的照片會被上傳嗎？</summary><p>不會。照片只存在你的手機裡，自動對齊也在手機上完成。</p></details>
+<details><summary>需要付費嗎？</summary><p>不用。功能全部免費，沒有付費牆。想支持開發的話，可以在 App 內自願贊助。</p></details>
+<details><summary>為什麼頭頂要用固定的基準照？</summary><p>頭頂沒有可靠的對齊參考點，如果每張都對齊上一張，誤差會一張張累積。所以每次都跟同一張基準照對照。</p></details>
+<details><summary>這是醫療工具嗎？</summary><p>不是。它只幫你把照片拍得一致、方便對照，不提供診斷。擔心脫髮請諮詢皮膚科醫師。</p></details>
+</section>
+</main>
+<footer><a href="/">← YouOwn 所有小工具</a>　·　小事 Lab</footer>
+</div>
+</body>
+</html>
