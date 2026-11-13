@@ -3,20 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>髮線追蹤｜用固定基準照記錄髮線與頭頂變化（iPhone App）</title>
-<meta name="description" content="髮線追蹤是免費的 iPhone App，用同一張基準照疊圖對齊，每次拍得一致、看得出變化。照片只存在你的手機，不上傳。">
+<title>髮線追蹤｜用固定基準照記錄髮線與頭頂變化（iPhone App、Android 網頁版）</title>
+<meta name="description" content="免費的髮線追蹤工具，iPhone 有 App、Android 用網頁版。用同一張基準照疊圖對齊，照片只存在你的手機，不上傳。">
 <link rel="canonical" href="https://youown.app/hairline-tracker/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="YouOwn">
 <meta property="og:title" content="髮線追蹤｜用固定基準照記錄髮線與頭頂變化">
-<meta property="og:description" content="免費 iPhone App。疊圖對齊、連拍推薦，照片只存在你的手機。">
+<meta property="og:description" content="iPhone App、Android 網頁版。疊圖對齊、連拍推薦，照片只存在你的手機。">
 <meta property="og:url" content="https://youown.app/hairline-tracker/">
+<meta property="og:image" content="https://hairline-tracker.vercel.app/og-image.png">
 <meta name="theme-color" content="#15120e">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"MobileApplication","name":"髮線追蹤","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","inLanguage":["zh-Hant","en"],"installUrl":"https://apps.apple.com/tw/app/id6797518042","offers":{"@type":"Offer","price":"0","priceCurrency":"TWD"},"publisher":{"@type":"Organization","name":"YouOwn","url":"https://youown.app/"}},
+{"@type":"WebApplication","name":"髮線追蹤 網頁版","url":"https://hairline-tracker.vercel.app/","operatingSystem":"Android, Web","applicationCategory":"LifestyleApplication","inLanguage":["zh-Hant","en"],"offers":{"@type":"Offer","price":"0","priceCurrency":"TWD"},"publisher":{"@type":"Organization","name":"YouOwn","url":"https://youown.app/"}},
 {"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Android 可以用嗎？","acceptedAnswer":{"@type":"Answer","text":"可以，使用網頁版。用 Chrome 開啟網頁版並安裝到主畫面，就能像 App 一樣使用。目前沒有 Android App。"}},
+{"@type":"Question","name":"換手機或清除資料會怎樣？","acceptedAnswer":{"@type":"Answer","text":"照片只存在你的手機，清除網站資料或手機遺失就無法復原。請定期匯出 ZIP 備份，換手機時匯入即可還原。"}},
 {"@type":"Question","name":"我的照片會被上傳嗎？","acceptedAnswer":{"@type":"Answer","text":"不會。照片只存在你的手機裡，自動對齊也在手機上完成。"}},
 {"@type":"Question","name":"需要付費嗎？","acceptedAnswer":{"@type":"Answer","text":"不用。功能全部免費，沒有付費牆，想支持開發可以自願贊助。"}},
 {"@type":"Question","name":"為什麼頭頂要用固定的基準照？","acceptedAnswer":{"@type":"Answer","text":"頭頂沒有可靠的對齊參考點，如果每張都對齊上一張，誤差會一張張累積。所以每次都跟同一張基準照對照。"}},
@@ -48,9 +52,10 @@
 <div class="hero">
 <div>
 <h1 class="serif">每次都拍得一樣，<em>變化</em>才看得出來</h1>
-<p class="lead">髮線追蹤是免費的 iPhone App。固定一張基準照，疊圖對齊再拍，把髮線和頭頂的變化記錄下來。照片只存在你的手機。</p>
+<p class="lead">髮線追蹤是免費的拍照記錄工具，iPhone 有 App，Android 用網頁版。固定一張基準照，疊圖對齊再拍，把髮線和頭頂的變化記錄下來。照片只存在你自己的手機。</p>
 <div class="cta">
-<a class="btn" href="https://apps.apple.com/tw/app/id6797518042">在 App Store 下載</a>
+<a class="btn" href="https://apps.apple.com/tw/app/id6797518042">iPhone：App Store 下載</a>
+<a class="btn" href="https://hairline-tracker.vercel.app">Android：開啟網頁版</a>
 <a class="btn ghost" href="https://line.me/R/ti/p/@hairtrack">加 LINE @hairtrack</a>
 </div>
 </div>
@@ -67,9 +72,18 @@
 </div>
 </section>
 
+<section aria-labelledby="platforms">
+<h2 id="platforms" class="serif">iPhone 和 Android 都能用</h2>
+<div class="grid">
+<div class="card"><h3 class="serif">iPhone：App Store</h3><p>下載 App，拍照、對齊、存相簿都在 App 裡完成。</p></div>
+<div class="card"><h3 class="serif">Android：網頁版</h3><p>目前沒有 Android App。用 Chrome 開啟網頁版並安裝到主畫面，就能像 App 一樣使用。</p></div>
+</div>
+<p class="note" style="margin-top:20px;max-width:36em">網頁版的照片存在瀏覽器裡，清除網站資料或手機遺失就無法復原，請定期匯出 ZIP 備份。網頁版和 iPhone App 的資料各自獨立，換用時可以用 ZIP 備份搬過去。</p>
+</section>
+
 <section aria-labelledby="privacy">
 <h2 id="privacy" class="serif">照片只留在你的手機</h2>
-<p class="note" style="font-size:16px;max-width:36em">照片存在手機本機，不上傳到任何伺服器，自動對齊也在手機上運算。App Store 的隱私標示是「不蒐集任何資料」。這也是 YouOwn 的設計方向：盡可能把資料留在你自己手上。</p>
+<p class="note" style="font-size:16px;max-width:36em">照片存在手機本機，不上傳到任何伺服器，自動對齊也在手機上運算。App Store 的隱私標示是「不蒐集任何資料」。網頁版另外使用匿名流量統計，只計算開啟次數、不使用 cookie，也與照片無關。這也是 YouOwn 的設計方向：盡可能把資料留在你自己手上。</p>
 </section>
 
 <section aria-labelledby="faq">
@@ -77,6 +91,8 @@
 <details><summary>我的照片會被上傳嗎？</summary><p>不會。照片只存在你的手機裡，自動對齊也在手機上完成。</p></details>
 <details><summary>需要付費嗎？</summary><p>不用。功能全部免費，沒有付費牆。想支持開發的話，可以在 App 內自願贊助。</p></details>
 <details><summary>為什麼頭頂要用固定的基準照？</summary><p>頭頂沒有可靠的對齊參考點，如果每張都對齊上一張，誤差會一張張累積。所以每次都跟同一張基準照對照。</p></details>
+<details><summary>Android 可以用嗎？</summary><p>可以，使用網頁版。用 Chrome 開啟網頁版並安裝到主畫面，就能像 App 一樣使用。目前沒有 Android App。</p></details>
+<details><summary>換手機或清除資料會怎樣？</summary><p>照片只存在你的手機，清除網站資料或手機遺失就無法復原。請定期匯出 ZIP 備份，換手機時匯入即可還原。</p></details>
 <details><summary>這是醫療工具嗎？</summary><p>不是。它只幫你把照片拍得一致、方便對照，不提供診斷。擔心脫髮請諮詢皮膚科醫師。</p></details>
 </section>
 </main>
