@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策｜YouOwn 帳單管家</title>
+<meta name="description" content="YouOwn 帳單管家的隱私權政策：說明如何存取 Gmail 與 Google 試算表、資料存放在哪裡，以及如何撤銷授權。">
+<link rel="canonical" href="https://youown.app/bills/privacy/">
+<meta name="theme-color" content="#15120e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<style>
+.doc{max-width:42em;padding-bottom:24px}
+.doc h1{font-size:clamp(28px,5vw,40px);margin:40px 0 8px}
+.doc h2{font-size:21px;margin:40px 0 12px}
+.doc p,.doc li{color:var(--mute);margin-bottom:10px}
+.doc ul{padding-left:1.3em;margin-bottom:10px}
+.doc b{color:var(--ink);font-weight:500}
+.doc a{color:var(--accent)}
+.date{color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="mark" href="/">YouOwn</a>
+<span class="by">by 小事 Lab</span>
+</header>
+<main class="doc">
+<h1 class="serif">隱私權政策</h1>
+<p class="date">適用於 YouOwn 帳單管家（iOS App 與網頁版）。生效日期：2026 年 11 月 14 日。</p>
+
+<h2 class="serif">簡短版</h2>
+<p>YouOwn 在你的裝置上運作，你的帳單與消費資料存放在<b>你自己的 Google 試算表</b>。這些資料<b>不會經過、也不會存放在開發者的伺服器</b>，開發者無法看到你的信件、帳單或試算表內容。</p>
+
+<h2 class="serif">YouOwn 會存取哪些資料</h2>
+<p>登入時，你會授權 YouOwn 使用以下三項 Google 權限：</p>
+<ul>
+<li><b>Gmail 唯讀（gmail.readonly）</b>：YouOwn 只搜尋來自銀行與電子發票平台寄件網域的通知信，在你的裝置上解析出帳單、消費、發票與轉帳的金額、日期、商家等記帳所需資訊。YouOwn 不會寄信、刪信或修改你的信件。</li>
+<li><b>Google 雲端硬碟檔案（drive.file）</b>：用來建立並讀寫 YouOwn 自己的試算表。這個權限只涵蓋由 YouOwn 建立的檔案，YouOwn 看不到你雲端硬碟裡的其他檔案。</li>
+<li><b>帳號電子郵件（userinfo.email）</b>：用來顯示你目前登入的 Google 帳號。</li>
+</ul>
+
+<h2 class="serif">資料存放在哪裡</h2>
+<ul>
+<li>解析後的帳單、消費、發票、轉帳與分類設定，寫入<b>你自己 Google 帳號中的試算表</b>。</li>
+<li>登入用的存取權杖只保存在你的裝置上。</li>
+<li>YouOwn 沒有自己的資料庫，開發者不保存你的任何財務資料。</li>
+</ul>
+
+<h2 class="serif">YouOwn 不會做的事</h2>
+<ul>
+<li>不出售你的資料，也不與任何第三方分享。</li>
+<li>不將 Google 使用者資料用於廣告，包括個人化或再行銷廣告。</li>
+<li>不使用這些資料訓練任何 AI 或機器學習模型。</li>
+<li>不會由人工讀取你的資料。除非你自己主動提供（例如把錯誤訊息貼給開發者協助排除問題）。</li>
+</ul>
+
+<h2 class="serif">第三方服務</h2>
+<ul>
+<li><b>Google</b>：登入、Gmail 與試算表都透過 Google 的 API 進行，適用 Google 的隱私權政策。</li>
+<li><b>Vercel</b>：網頁版由 Vercel 託管，Vercel 可能記錄一般的網站連線紀錄（例如 IP 位址），這些紀錄不包含你的帳務內容。</li>
+<li><b>Apple</b>：若 App 提供內購項目，付款由 Apple 處理，開發者不會取得你的付款資訊。</li>
+<li><b>PDF.js</b>：YouOwn 使用開源的 PDF.js 程式庫，在你的裝置上讀取 PDF 帳單。這個程式庫從第三方的內容傳遞網路（CDN）載入，載入時該服務可能看到一般連線資訊（例如 IP 位址）；你的 PDF 檔案內容不會被傳送出去。</li>
+</ul>
+
+<h2 class="serif">撤銷授權與刪除資料</h2>
+<ul>
+<li><b>撤銷授權</b>：到 Google 帳號的「安全性」→「你的第三方應用程式與服務」，移除 YouOwn，YouOwn 就無法再存取你的 Gmail 與試算表。</li>
+<li><b>刪除資料</b>：你的記帳資料在你自己的 Google 雲端硬碟裡，直接刪除該試算表即可。開發者沒有任何備份。</li>
+<li><b>刪除裝置上的資料</b>：登出 App 或移除 App，就會清除保存在裝置上的登入資訊。</li>
+</ul>
+
+<h2 class="serif">Google API 服務使用者資料政策聲明</h2>
+<p>YouOwn 對從 Google API 取得的資訊的使用與轉移，將遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括其中的 Limited Use 要求。</p>
+<p>YouOwn's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+<h2 class="serif">政策變更與聯絡方式</h2>
+<p>若政策有重大變更，會更新本頁的生效日期。有任何問題，請寄信到 <a href="mailto:vasement@gmail.com">vasement@gmail.com</a>。</p>
+<p>YouOwn 由獨立開發者品牌「小事 Lab」製作，來自台灣。</p>
+</main>
+<footer><a href="/">← YouOwn 首頁</a></footer>
+</div>
+</body>
+</html>
