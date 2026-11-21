@@ -56,8 +56,10 @@ dd{text-align:right}
 .card:hover{border-color:var(--accent)}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{color:var(--mute);font-size:15px}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.shots img{display:block;width:100%;height:auto;border:1px solid var(--line)}
 footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--mute);font-size:14px}
-@media(max-width:700px){body{padding-left:36px}body::before{width:20px}.flag{grid-template-columns:1fr}.hero{padding:56px 0}}
+@media(max-width:700px){body{padding-left:36px}body::before{width:20px}.flag{grid-template-columns:1fr}.shots{grid-template-columns:repeat(2,1fr);gap:12px}.hero{padding:56px 0}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}}
 </style>
 </head>
@@ -77,13 +79,21 @@ footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--mute);fo
 <section aria-labelledby="flagship">
 <h2 id="flagship" class="serif">YouOwn 帳單管家<span class="status">即將上線</span></h2>
 <div class="flag">
-<p>信用卡帳單自動整理。從銀行寄給你的 Gmail 通知信讀取帳單、消費與發票，整理好放進你自己的 Google 試算表，繳款日前提醒你。</p>
+<p>信用卡帳單與消費整理。選取銀行寄給你的電子帳單 PDF（也可以加上財政部電子發票 CSV），在手機上直接讀取，整理好放進你自己的 Google 試算表，繳款日前提醒你。</p>
 <dl>
-<div><dt>資料存放</dt><dd>你自己的 Google 試算表</dd></div>
-<div><dt>自動同步</dt><dd>8 家銀行的 Gmail 通知信</dd></div>
-<div><dt>其他銀行</dt><dd>可手動記帳</dd></div>
+<div><dt>資料存放</dt><dd>你自己的 Google 雲端硬碟</dd></div>
+<div><dt>讀取方式</dt><dd>在手機上直接讀取，不上傳</dd></div>
+<div><dt>支援銀行</dt><dd>永豐、玉山、國泰世華等多家</dd></div>
 <div><dt>我的伺服器</dt><dd>不存你的帳務資料</dd></div>
 </dl>
+</div>
+<div class="shots">
+<img src="/bills/screens/01-import.jpg" width="720" height="1561" alt="匯入信用卡電子帳單 PDF，在手機上直接讀取" loading="lazy">
+<img src="/bills/screens/02-bills.jpg" width="720" height="1561" alt="帳單頁：應繳金額與繳款截止日" loading="lazy">
+<img src="/bills/screens/03-spending.jpg" width="720" height="1561" alt="消費明細：可搜尋、可分類" loading="lazy">
+<img src="/bills/screens/04-overview.jpg" width="720" height="1561" alt="總覽：每月收支一目了然" loading="lazy">
+<img src="/bills/screens/05-invoices.jpg" width="720" height="1561" alt="發票頁：匯入電子發票 CSV，自動配對信用卡消費" loading="lazy">
+<img src="/bills/screens/06-security.jpg" width="720" height="1561" alt="設定頁：Face ID 鎖定，資料存在你自己的雲端硬碟" loading="lazy">
 </div>
 </section>
 
