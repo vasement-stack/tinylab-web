@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>隱私權政策｜YouOwn 帳單管家</title>
-<meta name="description" content="YouOwn 帳單管家的隱私權政策：說明如何存取 Gmail 與 Google 試算表、資料存放在哪裡，以及如何撤銷授權。">
+<meta name="description" content="YouOwn 帳單管家的隱私權政策：說明 iOS App 與網頁版如何處理你的資料、使用哪些 Google 權限、資料存放在哪裡，以及如何撤銷授權與刪除資料。">
 <link rel="canonical" href="https://youown.app/bills/privacy/">
 <meta name="theme-color" content="#141a20">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -32,27 +32,46 @@
 </header>
 <main class="doc">
 <h1 class="serif">隱私權政策</h1>
-<p class="date">適用於 YouOwn 帳單管家（iOS App 與網頁版）。生效日期：2026 年 11 月 14 日。</p>
+<p class="date">適用於 YouOwn 帳單管家的兩個版本：<b>iOS App</b>與<b>網頁版（邀請測試）</b>。生效日期：2026 年 11 月 14 日，最後更新：2026 年 11 月 21 日。<br><a href="#en">English version below</a></p>
 
 <h2 class="serif">簡短版</h2>
-<p>YouOwn 在你的裝置上運作，你的帳單與消費資料存放在<b>你自己的 Google 試算表</b>。這些資料<b>不會經過、也不會存放在開發者的伺服器</b>，開發者無法看到你的信件、帳單或試算表內容。</p>
+<p>YouOwn 在你的裝置上運作，你的帳單與消費資料存放在<b>你自己的 Google 試算表</b>。這些資料<b>不會經過、也不會存放在開發者的伺服器</b>，開發者無法看到你的帳單、消費紀錄或試算表內容。YouOwn 沒有廣告、沒有分析追蹤，也不出售資料。</p>
+<p><b>iOS App</b> 只讀取你自己選擇的信用卡帳單 PDF 與電子發票 CSV，<b>不會存取你的 Gmail</b>。<b>網頁版（邀請測試）</b>另外提供 Gmail 自動同步，會讀取特定銀行與電子發票平台的通知信。</p>
 
 <h2 class="serif">YouOwn 會存取哪些資料</h2>
-<p>登入時，你會授權 YouOwn 使用以下三項 Google 權限：</p>
+<p><b>一、iOS App</b>。登入時，你會授權 YouOwn 使用兩項 Google 權限：</p>
+<ul>
+<li><b>Google 雲端硬碟檔案（drive.file）</b>：用來建立並讀寫 YouOwn 自己的試算表。這個權限只涵蓋由 YouOwn 建立的檔案，YouOwn 看不到你雲端硬碟裡的其他檔案。</li>
+<li><b>帳號電子郵件（userinfo.email）</b>：用來顯示你目前登入的 Google 帳號，並在你切換帳號時清除前一個帳號的本機快取。</li>
+</ul>
+<p>此外，只有在你主動選擇檔案、或從郵件／檔案 App 的分享選單把檔案交給 YouOwn 時，YouOwn 才會讀取：</p>
+<ul>
+<li><b>信用卡電子帳單 PDF</b>：在你的手機上解析出帳單總額、繳款截止日與消費明細（日期、金額、商家）。若 PDF 的文字讀不出來，會使用 iOS 內建的文字辨識（Apple Vision），辨識在手機上完成，圖片與文字都不會傳出去。</li>
+<li><b>電子發票 CSV</b>：從財政部電子發票整合服務平台下載的檔案，在手機上解析發票日期、店名、金額與品項。</li>
+</ul>
+<p>YouOwn <b>不會</b>存取你的 Gmail、聯絡人、相簿、位置或手機上的其他檔案。</p>
+<p><b>二、網頁版（邀請測試）</b>。登入時，你會授權以下三項 Google 權限：</p>
 <ul>
 <li><b>Gmail 唯讀（gmail.readonly）</b>：YouOwn 只搜尋來自特定銀行與電子發票平台寄件地址的通知信，並在你的裝置上讀取信件內容與 PDF、CSV 附件，解析出帳單、消費、發票與轉帳的金額、日期、商家等記帳所需資訊。YouOwn 不會寄信、刪信或修改你的信件。</li>
-<li><b>Google 雲端硬碟檔案（drive.file）</b>：用來建立並讀寫 YouOwn 自己的試算表。這個權限只涵蓋由 YouOwn 建立的檔案，YouOwn 看不到你雲端硬碟裡的其他檔案。</li>
-<li><b>帳號電子郵件（userinfo.email）</b>：用來顯示你目前登入的 Google 帳號。</li>
+<li><b>Google 雲端硬碟檔案（drive.file）</b>：同上。</li>
+<li><b>帳號電子郵件（userinfo.email）</b>：同上。</li>
 </ul>
 <p>登入時，Google 也會一併提供你的基本個人資料（姓名、頭像）與帳號識別碼（openid、userinfo.profile）。YouOwn 不會使用或保存這些資料。</p>
 
 <h2 class="serif">資料存放在哪裡</h2>
 <ul>
-<li>解析後的帳單、消費、發票、轉帳與分類設定，寫入<b>你自己 Google 帳號中的試算表</b>。</li>
-<li>登入用的存取權杖只保存在你的裝置上。</li>
+<li>解析後的帳單、消費、發票、轉帳、帳戶餘額與分類設定，寫入<b>你自己 Google 帳號中的試算表</b>（「YouOwn 帳本」）。</li>
+<li>登入用的憑證只保存在你的裝置上。</li>
 <li>為了加快載入，YouOwn 會在你的裝置上暫存一份帳單、消費、帳戶與發票資料的快取，登出時會清除。</li>
-<li>PDF 帳單密碼預設只暫存在記憶體，關閉頁面或 App 就清除。若你開啟「記住 PDF 密碼」，密碼會存在這個裝置上，登出時清除。密碼只用於在你的裝置上開啟 PDF，不會傳送給開發者或任何第三方。</li>
+<li><b>PDF 帳單密碼</b>：預設只暫存在記憶體，關閉 App 或頁面就清除。iOS App 若你開啟「記住 PDF 密碼」，密碼會存在<b>這支手機的 iOS 鑰匙圈（Keychain）</b>，每家銀行一組，取用時需要 Face ID／螢幕密碼驗證，登出時清除。網頁版若開啟，則存在這個裝置的瀏覽器中，登出時清除。密碼只用於在你的裝置上開啟 PDF，不會傳送給開發者或任何第三方。</li>
+<li>你選擇的 PDF 與 CSV 檔案只在裝置上讀取，<b>不會被上傳或另存到 YouOwn 的伺服器</b>（YouOwn 沒有伺服器）。</li>
 <li>YouOwn 沒有自己的資料庫，開發者不保存你的任何財務資料。</li>
+</ul>
+
+<h2 class="serif">Face ID 與「回報問題」</h2>
+<ul>
+<li><b>Face ID 鎖定（選用）</b>：開啟後進入 App 需要驗證。驗證由 iOS 完成，YouOwn 不會取得或保存你的臉部或指紋資料。</li>
+<li><b>回報問題（選用）</b>：當某份帳單讀取失敗時，你可以按「回報問題」。App 會把這份帳單的辨識文字複製到剪貼簿（內容可能含姓名、卡號末四碼與消費明細），並開啟 Gmail 或郵件 App 的新郵件，收件人是 josh@youown.app。<b>只有你自己檢查內容、按下寄出，這些文字才會傳給開發者</b>，開發者僅用來修正帳單讀取，之後不會另作他用，你也可以在寄出前刪除不想提供的部分。</li>
 </ul>
 
 <h2 class="serif">YouOwn 不會做的事</h2>
@@ -60,31 +79,152 @@
 <li>不出售你的資料，也不與任何第三方分享。</li>
 <li>不將 Google 使用者資料用於廣告，包括個人化或再行銷廣告。</li>
 <li>不使用這些資料訓練任何 AI 或機器學習模型。</li>
-<li>不會由人工讀取你的資料。除非你自己主動提供（例如把錯誤訊息貼給開發者協助排除問題）。</li>
+<li>不使用任何分析、追蹤或廣告 SDK。</li>
+<li>不會由人工讀取你的資料。除非你自己主動提供（例如透過「回報問題」寄出帳單文字，或把錯誤訊息貼給開發者）。</li>
 </ul>
 
 <h2 class="serif">第三方服務</h2>
 <ul>
-<li><b>Google</b>：登入、Gmail 與試算表都透過 Google 的 API 進行，適用 Google 的隱私權政策。</li>
-<li><b>Vercel</b>：網頁版由 Vercel 託管，Vercel 可能記錄一般的網站連線紀錄（例如 IP 位址），這些紀錄不包含你的帳務內容。</li>
-<li><b>Apple</b>：若 App 提供內購項目，付款由 Apple 處理，開發者不會取得你的付款資訊。</li>
-<li><b>PDF.js</b>：YouOwn 使用開源的 PDF.js 程式庫，在你的裝置上讀取 PDF 帳單。這個程式庫從第三方的內容傳遞網路（CDN）載入，載入時該服務可能看到一般連線資訊（例如 IP 位址）；你的 PDF 檔案內容不會被傳送出去。</li>
+<li><b>Google</b>：登入、雲端硬碟與試算表（網頁版另含 Gmail）都透過 Google 的 API 進行，適用 Google 的隱私權政策。</li>
+<li><b>Apple</b>：App 透過 App Store 散布；iOS 的文字辨識（Vision）、Face ID 與鑰匙圈都在你的手機上運作。</li>
+<li><b>Vercel</b>（僅網頁版與官網）：網頁版與 youown.app 由 Vercel 託管，Vercel 可能記錄一般的網站連線紀錄（例如 IP 位址），這些紀錄不包含你的帳務內容。iOS App 的程式與 PDF 讀取程式庫都內建在 App 內，使用時不會連到 Vercel。</li>
+<li><b>PDF.js</b>：YouOwn 使用開源的 PDF.js 程式庫在你的裝置上讀取 PDF。iOS App 內建這個程式庫；網頁版則從第三方的內容傳遞網路（CDN）載入，載入時該服務可能看到一般連線資訊（例如 IP 位址），你的 PDF 檔案內容不會被傳送出去。</li>
+</ul>
+<p>以上第三方服務都不會收到你的帳單內容、帳務資料或 Google 帳號資訊（Google 本身除外，因為資料是存在你自己的 Google 帳號）。</p>
+
+<h2 class="serif">資料如何保護</h2>
+<ul>
+<li>YouOwn 沒有伺服器。你的資料只在「你的裝置」與「Google 自己的服務」之間傳輸，全程使用 HTTPS 加密連線。</li>
+<li>iOS App 的登入憑證由 Google 登入 SDK 保存在 iOS 的 Keychain（系統加密儲存區）；記住的 PDF 密碼也存在 Keychain，取用需要 Face ID 或螢幕密碼驗證。網頁版的存取權杖只放在瀏覽器記憶體，不寫入儲存空間。</li>
+<li>只申請必要的最小權限：雲端硬碟只能存取 YouOwn 自己建立的檔案；iOS App 完全不申請 Gmail 權限；網頁版的 Gmail 權限只讀不寫。</li>
+<li>裝置上的快取在登出時清除。顯示信件與帳務內容前，程式會先做跳脫處理，防止惡意內容被注入。</li>
+<li>網頁版載入的 PDF.js 程式庫附有完整性檢查（Subresource Integrity），內容被竄改時瀏覽器會拒絕執行。</li>
+<li>開發者的程式碼儲存庫啟用兩步驟驗證。</li>
+</ul>
+
+<h2 class="serif">資料保存期限</h2>
+<ul>
+<li><b>開發者端</b>：不保存任何 Google 使用者資料，因此沒有保存期限，也沒有需要刪除的資料。只有你主動用「回報問題」寄來的內容會留在開發者的信箱，用於修正問題，修正完成後刪除。</li>
+<li><b>你的裝置</b>：快取與記住的 PDF 密碼保存到你登出或移除 App 為止。</li>
+<li><b>你的 Google 雲端硬碟</b>：「YouOwn 帳本」試算表保存到你自行刪除為止。</li>
 </ul>
 
 <h2 class="serif">撤銷授權與刪除資料</h2>
 <ul>
-<li><b>撤銷授權</b>：到 Google 帳號的「安全性」→「你的第三方應用程式與服務」，移除 YouOwn，YouOwn 就無法再存取你的 Gmail 與試算表。</li>
-<li><b>刪除資料</b>：你的記帳資料在你自己的 Google 雲端硬碟裡，直接刪除該試算表即可。開發者沒有任何備份。</li>
-<li><b>刪除裝置上的資料</b>：在 App 內登出，會清除裝置上的快取與記住的 PDF 密碼；移除 App 也會一併移除裝置上的資料。</li>
+<li><b>撤銷授權</b>：到 Google 帳號的「安全性」→「你的第三方應用程式與服務」，移除 YouOwn，YouOwn 就無法再存取你的 Google 帳號。</li>
+<li><b>刪除資料</b>：你的記帳資料在你自己的 Google 雲端硬碟裡，直接刪除「YouOwn 帳本」試算表即可。開發者沒有任何備份。</li>
+<li><b>刪除裝置上的資料</b>：在 App 內登出，會清除裝置上的快取、登入狀態與記住的 PDF 密碼；移除 App 也會一併移除裝置上的所有資料。</li>
+<li>YouOwn 沒有自己的會員帳號系統，不需要另外刪除帳號。</li>
 </ul>
+
+<h2 class="serif">兒童</h2>
+<p>YouOwn 不是為 13 歲以下兒童設計，也不會有意蒐集兒童的資料。</p>
 
 <h2 class="serif">Google API 服務使用者資料政策聲明</h2>
 <p>YouOwn 對從 Google API 取得的資訊的使用與轉移，將遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括其中的 Limited Use 要求。</p>
-<p>YouOwn's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+<p>YouOwn's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
 <h2 class="serif">政策變更與聯絡方式</h2>
-<p>若政策有重大變更，會更新本頁的生效日期。有任何問題，請寄信到 <a href="mailto:vasement@gmail.com">vasement@gmail.com</a>。</p>
-<p>YouOwn 由獨立開發者 J.K製作，來自台灣。</p>
+<p>若政策有重大變更，會更新本頁的生效日期與最後更新日期。有任何問題，請寄信到 <a href="mailto:josh@youown.app">josh@youown.app</a>。</p>
+<p>YouOwn 由獨立開發者 J.K 製作，來自台灣。</p>
+
+<section id="en" lang="en" style="border-top:0;padding-top:0">
+<h1 class="serif" style="margin-top:56px">Privacy Policy</h1>
+<p class="date">Applies to both versions of YouOwn Bills: the <b>iOS app</b> and the <b>web app (invite-only beta)</b>. Effective November 14, 2026. Last updated November 21, 2026.</p>
+
+<h2 class="serif">Summary</h2>
+<p>YouOwn runs on your own device. Your bills and spending records are stored in a spreadsheet in <b>your own Google Drive</b>. This data <b>never passes through or is stored on any server operated by the developer</b>, and the developer cannot see your bills, spending records or spreadsheet. YouOwn has no ads, no analytics or tracking, and never sells data.</p>
+<p>The <b>iOS app</b> only reads the credit card bill PDFs and e-invoice CSV files that you choose, and <b>does not access your Gmail</b>. The <b>web app (invite-only beta)</b> additionally offers Gmail sync, which reads notification emails from specific banks and the Taiwan e-invoice platform.</p>
+
+<h2 class="serif">What data YouOwn accesses</h2>
+<p><b>1. iOS app.</b> When you sign in, you authorize two Google permissions:</p>
+<ul>
+<li><b>Google Drive files created by the app (drive.file)</b>: used to create and read/write YouOwn's own spreadsheet. It only covers files created by YouOwn; YouOwn cannot see any other file in your Drive.</li>
+<li><b>Account email (userinfo.email)</b>: used to show which Google account is signed in, and to clear the local cache of a previous account when you switch accounts.</li>
+</ul>
+<p>In addition, YouOwn reads a file only when you choose it, or hand it to YouOwn from the share sheet of Mail or Files:</p>
+<ul>
+<li><b>Credit card bill PDFs</b>: parsed on your phone to extract the bill total, due date and transactions (date, amount, merchant). If a PDF has no readable text, iOS's built-in text recognition (Apple Vision) is used. It runs on your phone; neither the images nor the text leave your device.</li>
+<li><b>E-invoice CSV files</b>: downloaded from the Ministry of Finance e-invoice platform and parsed on your phone for invoice date, store, amount and items.</li>
+</ul>
+<p>YouOwn does <b>not</b> access your Gmail, contacts, photos, location, or any other file on your phone.</p>
+<p><b>2. Web app (invite-only beta).</b> When you sign in, you authorize three Google permissions:</p>
+<ul>
+<li><b>Gmail read-only (gmail.readonly)</b>: YouOwn searches for notification emails from specific banks and the Taiwan e-invoice platform using sender-address filters, reads the message body and PDF or CSV attachments on your device, and extracts the amounts, dates and merchants needed for bookkeeping. YouOwn never sends, deletes or modifies your email.</li>
+<li><b>Google Drive files created by the app (drive.file)</b>: as above.</li>
+<li><b>Account email (userinfo.email)</b>: as above.</li>
+</ul>
+<p>At sign-in, Google also provides your basic profile (name, profile picture) and an account identifier (openid, userinfo.profile). YouOwn does not use or store them.</p>
+
+<h2 class="serif">Where your data is stored</h2>
+<ul>
+<li>Extracted bills, expenses, invoices, transfers, account balances and category settings are written to a spreadsheet in <b>your own Google account</b> (named "YouOwn 帳本").</li>
+<li>Sign-in credentials stay on your device.</li>
+<li>To load faster, YouOwn keeps a cache of your bills, expenses, accounts and invoices on your device. It is cleared when you sign out.</li>
+<li><b>PDF bill passwords</b> are kept in memory only by default and are cleared when you close the app or page. In the iOS app, if you turn on "Remember PDF passwords", they are stored in <b>this phone's iOS Keychain</b>, one per bank, require Face ID or your passcode to be used, and are cleared when you sign out. In the web app, if turned on, they are stored in this device's browser and cleared when you sign out. Passwords are used only to open PDFs on your device and are never sent to the developer or any third party.</li>
+<li>The PDF and CSV files you choose are read on your device only. <b>They are not uploaded or stored on any YouOwn server</b> (YouOwn has no server).</li>
+<li>YouOwn has no database of its own. The developer stores none of your financial data.</li>
+</ul>
+
+<h2 class="serif">Face ID and "Report a problem"</h2>
+<ul>
+<li><b>Face ID lock (optional)</b>: when on, the app asks you to authenticate when it opens. Authentication is performed by iOS; YouOwn never receives or stores your face or fingerprint data.</li>
+<li><b>Report a problem (optional)</b>: if a bill cannot be read, you can tap "Report a problem". The app copies the recognized text of that bill to your clipboard (it may contain your name, the last four digits of your card, and transactions) and opens a new email in Gmail or Mail addressed to josh@youown.app. <b>The text is sent to the developer only if you review it and press send yourself.</b> It is used only to fix bill reading and for nothing else, and you can delete any part you do not want to share before sending.</li>
+</ul>
+
+<h2 class="serif">What YouOwn does not do</h2>
+<ul>
+<li>It does not sell your data or share it with any third party.</li>
+<li>It does not use Google user data for advertising, including personalized or retargeted ads.</li>
+<li>It does not use this data to train any AI or machine learning model.</li>
+<li>It does not use any analytics, tracking or advertising SDK.</li>
+<li>No human reads your data, unless you voluntarily provide it (for example, by sending bill text through "Report a problem", or by pasting an error message to the developer).</li>
+</ul>
+
+<h2 class="serif">Third-party services</h2>
+<ul>
+<li><b>Google</b>: sign-in, Google Drive and Sheets (and Gmail in the web app) use Google APIs and are subject to Google's privacy policy.</li>
+<li><b>Apple</b>: the app is distributed through the App Store; text recognition (Vision), Face ID and the Keychain run on your phone.</li>
+<li><b>Vercel</b> (web app and website only): the web app and youown.app are hosted by Vercel, which may keep ordinary connection logs (such as IP addresses). These logs do not contain your financial content. The iOS app and its PDF library are bundled inside the app and do not connect to Vercel when you use it.</li>
+<li><b>PDF.js</b>: YouOwn uses the open-source PDF.js library to read PDFs on your device. The iOS app bundles it; the web app loads it from a third-party content delivery network, which may see ordinary connection information (such as your IP address). Your PDF content is not sent anywhere.</li>
+</ul>
+<p>None of these third parties receives your bill content, your financial data or your Google account information (other than Google itself, since your data is stored in your own Google account).</p>
+
+<h2 class="serif">How your data is protected</h2>
+<ul>
+<li>YouOwn has no server. Your data travels only between your device and Google's own services, always over HTTPS.</li>
+<li>In the iOS app, sign-in credentials are kept by the Google Sign-In SDK in the iOS Keychain, and remembered PDF passwords are also in the Keychain and require Face ID or your passcode to use. In the web app, the access token is held in browser memory only and is not written to storage.</li>
+<li>YouOwn requests only the minimum permissions it needs: Drive access is limited to files created by YouOwn; the iOS app requests no Gmail permission at all; Gmail access in the web app is read-only.</li>
+<li>The on-device cache is cleared on sign-out. Content is escaped before display to prevent malicious content from being injected.</li>
+<li>The PDF.js library loaded by the web app uses Subresource Integrity, so the browser refuses to run it if its content has been altered.</li>
+<li>The developer's source code repository is protected with two-factor authentication.</li>
+</ul>
+
+<h2 class="serif">Data retention</h2>
+<ul>
+<li><b>Developer side</b>: the developer retains no Google user data, so there is no retention period and nothing to delete. The only exception is text you voluntarily send through "Report a problem", which stays in the developer's mailbox to fix the issue and is deleted once it is fixed.</li>
+<li><b>Your device</b>: the cache and any remembered PDF passwords are kept until you sign out or remove the app.</li>
+<li><b>Your Google Drive</b>: the "YouOwn 帳本" spreadsheet is kept until you delete it.</li>
+</ul>
+
+<h2 class="serif">Revoking access and deleting data</h2>
+<ul>
+<li><b>Revoke access</b>: in your Google Account, go to Security, then "Your connections to third-party apps and services", and remove YouOwn. YouOwn can then no longer access your Google account.</li>
+<li><b>Delete your data</b>: your records are in your own Google Drive; delete the "YouOwn 帳本" spreadsheet. The developer has no backup.</li>
+<li><b>Delete data on your device</b>: signing out of the app clears the cache, the sign-in state and remembered PDF passwords; removing the app removes all data on the device.</li>
+<li>YouOwn has no account system of its own, so there is no separate account to delete.</li>
+</ul>
+
+<h2 class="serif">Children</h2>
+<p>YouOwn is not directed to children under 13 and does not knowingly collect their data.</p>
+
+<h2 class="serif">Google API Services User Data Policy</h2>
+<p>YouOwn's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2 class="serif">Changes and contact</h2>
+<p>If this policy changes materially, the dates at the top of this page will be updated. For questions, email <a href="mailto:josh@youown.app">josh@youown.app</a>.</p>
+<p>YouOwn is made by independent developer J.K in Taiwan.</p>
+</section>
 </main>
 <footer><a href="/">← YouOwn 首頁</a></footer>
 </div>
