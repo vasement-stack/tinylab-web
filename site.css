@@ -1,4 +1,4 @@
-:root{--bg:#141a20;--ink:#e8eef0;--mute:#8a979e;--accent:#11a995;--line:#26303a;--card:#1a222a}
+:root{--bg:#fbfaf7;--ink:#1c2b2e;--mute:#5d6b70;--accent:#0b7f70;--line:#e4e1d8;--card:#fff}
 *{box-sizing:border-box;margin:0}
 html{scroll-padding-top:24px}
 body{background:var(--bg);color:var(--ink);font:16px/1.8 "Noto Sans TC",system-ui,-apple-system,sans-serif;padding-left:56px}
@@ -15,9 +15,10 @@ h1{font-size:clamp(32px,6vw,56px);line-height:1.3;margin-bottom:24px}
 h1 em{font-style:normal;color:var(--accent)}
 .lead{color:var(--mute);font-size:18px;max-width:32em}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{display:inline-block;padding:11px 22px;background:var(--accent);color:#0b1114;font-weight:500;text-decoration:none;border:1px solid var(--accent)}
+.btn{display:inline-block;padding:11px 22px;background:var(--accent);color:#fff;font-weight:500;text-decoration:none;border:1px solid var(--accent)}
 .btn.ghost{background:none;color:var(--ink);border-color:var(--line)}
-.btn:hover{filter:brightness(1.1)}
+.btn:hover{background:#096b5e;border-color:#096b5e}
+.btn.ghost:hover{background:none;border-color:var(--accent)}
 section{border-top:1px solid var(--line);padding:56px 0}
 h2{font-size:26px;line-height:1.4;margin-bottom:24px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
