@@ -18,7 +18,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"WebSite","name":"YouOwn","url":"https://youown.app/","inLanguage":"zh-Hant-TW"},
-{"@type":"Organization","name":"YouOwn","url":"https://youown.app/","founder":{"@type":"Person","name":"J.K"}}
+{"@type":"Organization","name":"YouOwn","url":"https://youown.app/","founder":{"@type":"Person","name":"J.K"}},
+{"@type":"MobileApplication","name":"YouOwn 帳單管家","url":"https://youown.app/bills/","operatingSystem":"iOS","applicationCategory":"FinanceApplication","downloadUrl":"https://apps.apple.com/tw/app/youown-%E5%B8%B3%E5%96%AE%E7%AE%A1%E5%AE%B6/id6837612326"}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,11 +57,16 @@ dd{text-align:right}
 .card:hover{border-color:var(--accent)}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{color:var(--mute);font-size:15px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;background:var(--accent);color:#06211d;font-weight:700;text-decoration:none;padding:10px 24px;border:1px solid var(--accent);transition:background .2s}
+.btn:hover{background:#0e8f7e}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line);font-weight:500}
+.btn.ghost:hover{border-color:var(--accent)}
 .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
 .shots img{display:block;width:100%;height:auto;border:1px solid var(--line)}
 footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--mute);font-size:14px}
-@media(max-width:700px){body{padding-left:36px}body::before{width:20px}.flag{grid-template-columns:1fr}.shots{grid-template-columns:repeat(2,1fr);gap:12px}.hero{padding:56px 0}}
-@media(prefers-reduced-motion:reduce){.card{transition:none}}
+@media(max-width:700px){body{padding-left:36px}body::before{width:20px}.flag{grid-template-columns:1fr}.shots{gap:10px}.hero{padding:56px 0}}
+@media(prefers-reduced-motion:reduce){.card,.btn{transition:none}}
 </style>
 </head>
 <body>
@@ -77,7 +83,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--mute);fo
 </div>
 
 <section aria-labelledby="flagship">
-<h2 id="flagship" class="serif">YouOwn 帳單管家<span class="status">即將上線</span></h2>
+<h2 id="flagship" class="serif">YouOwn 帳單管家<span class="status">iPhone App</span></h2>
 <div class="flag">
 <p>信用卡帳單與消費整理。選取銀行寄給你的電子帳單 PDF（也可以加上財政部電子發票 CSV），在手機上直接讀取，整理好放進你自己的 Google 試算表，繳款日前提醒你。</p>
 <dl>
@@ -87,13 +93,11 @@ footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--mute);fo
 <div><dt>我的伺服器</dt><dd>不存你的帳務資料</dd></div>
 </dl>
 </div>
+<p class="cta"><a class="btn" href="https://apps.apple.com/tw/app/youown-%E5%B8%B3%E5%96%AE%E7%AE%A1%E5%AE%B6/id6837612326" rel="noopener">在 App Store 下載</a><a class="btn ghost" href="/bills/">了解更多</a></p>
 <div class="shots">
-<img src="/bills/screens/01-import.jpg" width="720" height="1561" alt="匯入信用卡電子帳單 PDF，在手機上直接讀取" loading="lazy">
-<img src="/bills/screens/02-bills.jpg" width="720" height="1561" alt="帳單頁：應繳金額與繳款截止日" loading="lazy">
-<img src="/bills/screens/03-spending.jpg" width="720" height="1561" alt="消費明細：可搜尋、可分類" loading="lazy">
-<img src="/bills/screens/04-overview.jpg" width="720" height="1561" alt="總覽：每月收支一目了然" loading="lazy">
-<img src="/bills/screens/05-invoices.jpg" width="720" height="1561" alt="發票頁：匯入電子發票 CSV，自動配對信用卡消費" loading="lazy">
-<img src="/bills/screens/06-security.jpg" width="720" height="1561" alt="設定頁：Face ID 鎖定，資料存在你自己的雲端硬碟" loading="lazy">
+<img src="/bills/screens/01-import.jpg" width="720" height="1565" alt="匯入信用卡電子帳單 PDF，在手機上直接讀取" loading="lazy">
+<img src="/bills/screens/03-bills.jpg" width="720" height="1565" alt="帳單頁：應繳金額與繳款截止日" loading="lazy">
+<img src="/bills/screens/06-invoices.jpg" width="720" height="1565" alt="發票頁：匯入電子發票 CSV，自動配對信用卡消費" loading="lazy">
 </div>
 </section>
 
@@ -116,7 +120,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 56px;color:var(--mute);fo
 </section>
 </main>
 
-<footer>YouOwn 由獨立開發者 J.K製作，來自台灣。　·　<a href="/bills/privacy/">帳單管家隱私權政策</a></footer>
+<footer>YouOwn 由獨立開發者 J.K製作，來自台灣。　·　<a href="/bills/">帳單管家</a>　·　<a href="/bills/privacy/">隱私權政策</a></footer>
 </div>
 </body>
 </html>
